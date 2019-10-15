@@ -2,11 +2,10 @@ import React from 'react';
 import About from './about.jsx';
 import Projects from './projects.jsx';
 import Contact from './contact.jsx';
-import photos from './photos.jsx';
+import Photos from './photos.jsx';
+import WOW from "wow.js";
 
-import WOW form "wow.js";
-
-class Navbar extends React.Component {
+export class Navbar extends React.Component {
   constructor(props) {
     super(props);
     this.about= React.createRef();
@@ -17,7 +16,11 @@ class Navbar extends React.Component {
     this.scrolling = this.scrolling.bind(this);
   }
   componentDidMount() {
-    new WOW.WOW().init();
+    const WOW = require('wow.js');
+    window.wow = new WOW ({
+      live:false
+    })
+    window.wow.init();
   }
 
   navEffect() {
@@ -47,7 +50,7 @@ class Navbar extends React.Component {
           className="navbar navbar-expand-lg navbar-light bg-light">
           <div className="container">
             <a
-              classNAme="home-style navbar-brand"
+              className="home-style navbar-brand"
               onClick={() => {
                 window.scrollTo({
                   top:0,
@@ -65,7 +68,7 @@ class Navbar extends React.Component {
               aria-label="toggle navigation">
               <span className="navbar-toggler-icon" />
             </button>
-            <div>
+            <div
               className="collapse navbar-collapse"
               id="navbarNavAltMarkup">
               <div className="navbar-nav">
