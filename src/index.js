@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
+import "./styles/index.scss";
 import Navbar from "./components/navbar.jsx";
 import Footer from "./components/footer.jsx";
 import 'bootstrap/dist/css/bootstrap.css';

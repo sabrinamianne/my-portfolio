@@ -1,16 +1,15 @@
 import React from 'react';
+import PropTypes from "prop-types";
 
 
-
-function Projects() {
-
-
+export default class Projects extends React.Component {
+render() {
   return (
     <div>
-      <p>Projects</p>
+      <div id="my-projects">
+        <p>Projects</p>
+      </div>
     </div>
-  );
-
+    );
+  }
 }
-
-export default Projects;

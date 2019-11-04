@@ -1,9 +1,10 @@
 import React from 'react';
 import About from './about.jsx';
+import Background from './background.jsx';
 import Projects from './projects.jsx';
 import Contact from './contact.jsx';
 import Photos from './photos.jsx';
-import WOW from "wow.js";
+
 
 export class Navbar extends React.Component {
   constructor(props) {
@@ -15,31 +16,31 @@ export class Navbar extends React.Component {
 
     this.scrolling = this.scrolling.bind(this);
   }
-  componentDidMount() {
-    const WOW = require('wow.js');
-    window.wow = new WOW ({
-      live:false
-    })
-    window.wow.init();
-  }
+
 
   navEffect() {
     window.addEventListener("scroll", () => {
       var navBar = document.getElementById("navbar");
       var domRect = navBar.getBoundingClientRect();
+      var myBackground = document.getElementById("my-background");
+			var domBGRect = myBackground.getBoundingClientRect();
 
       if (domRect.y <= domRect.height) {
         navBar.classList.add("fade-in-nav");
       }
+      if (-domBGRect.height < domBGRect.top) {
+				navBar.classList.remove("fade-in-nav");
+			}
+
     });
   }
 
   scrolling(instance) {
-    let node = document.getElementByID(instance.current.props.id);
-    window.scrollTo({
-      top: node.offsetTop,
-      behavior: "smooth"
-      });
+		let node = document.getElementById(instance.current.props.id);
+		window.scrollTo({
+			top: node.offsetTop,
+			behavior: "smooth"
+		});
   }
 
   render() {
@@ -47,7 +48,7 @@ export class Navbar extends React.Component {
       <div>
         <nav
           id="navbar"
-          className="navbar navbar-expand-lg navbar-light bg-light">
+          className="navbar navbar-expand-lg navbar-light">
           <div className="container">
             <a
               className="home-style navbar-brand"
@@ -104,6 +105,12 @@ export class Navbar extends React.Component {
             </div>
           </div>
         </nav>
+        <Background
+          ref={this.navEffect}
+          id="my-background"
+          aboutRef={this.about}
+          bounceIn={"wow bounceIn"}
+        />
         <About
           ref={this.about}
           id="about-container"
