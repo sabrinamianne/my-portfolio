@@ -2,14 +2,21 @@
 @import url('https://fonts.googleapis.com/css?family=Lato:300,400,700');
 
 
-/*****************STARTS TOP BACKGROUND SECTION***************/
 
-/*********************************************************************************/
+@keyframes animStar {
+  from {
+    transform: translateY(0px);
+  }
+
+  to {
+    transform: translateY(-2000px);
+  }
+}
 
 .background {
     overflow: hidden;
     background-image: url('./img/bg.jpg');
-    height: 100vh;
+    height: 94vh;
     background-repeat:round;
 }
 
@@ -271,6 +278,8 @@
     flex-direction: row;
     justify-content: space-between;
 }
+
+
 
 @media only screen and (max-width: 900px) {
     .modal-card {

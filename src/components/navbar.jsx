@@ -1,10 +1,10 @@
-import React from 'react';
+import React from "react";
 import About from './about.jsx';
 import Background from './background.jsx';
 import Projects from './projects.jsx';
 import Contact from './contact.jsx';
 import Photos from './photos.jsx';
-
+import WOW from "wow.js";
 
 export class Navbar extends React.Component {
   constructor(props) {
@@ -35,6 +35,7 @@ export class Navbar extends React.Component {
     });
   }
 
+
   scrolling(instance) {
 		let node = document.getElementById(instance.current.props.id);
 		window.scrollTo({
@@ -42,8 +43,20 @@ export class Navbar extends React.Component {
 			behavior: "smooth"
 		});
   }
+  componentDidMount() {
+    const WOW = require('wow.js');
+    window.wow = new WOW ({
+      live:true
+    })
+    window.wow.init();
+  }
 
   render() {
+    const nav = {
+      fontSize:"27px",
+      marginRight:"50%"
+    }
+
     return (
       <div>
         <nav
@@ -60,45 +73,48 @@ export class Navbar extends React.Component {
               }}>
             </a>
             <button
-              className="navbar=toggler"
-              type="button"
-              data-toggle="collapse"
-              data-target="#navbarNavAltMarkup"
-              aria-controls="navbarNavAltMarkup"
-              aria-expanded="false"
-              aria-label="toggle navigation">
-              <span className="navbar-toggler-icon" />
-            </button>
-            <div
-              className="collapse navbar-collapse"
-              id="navbarNavAltMarkup">
+							className="navbar-toggler"
+							type="button"
+							data-toggle="collapse"
+							data-target="#navbarNavAltMarkup"
+							aria-controls="navbarNavAltMarkup"
+							aria-expanded="false"
+							aria-label="Toggle navigation">
+							<span className="navbar-toggler-icon" />
+						</button>
+						<div
+							className="collapse navbar-collapse"
+							id="navbarNavAltMarkup"
+
+              >
+
               <div className="navbar-nav">
                 <a
                   onClick={() => {
                     this.scrolling(this.about);
                   }}
-                  className="btn-style nav-item nav-link">
+                  className="btn-style nav-item nav-link" style={nav}>
                   About
                 </a>
                 <a
                   onClick={() => {
                     this.scrolling(this.projects);
                   }}
-                  className="btn-style nav-item nav-link">
+                  className="btn-style nav-item nav-link" style={nav}>
                   Projects
                 </a>
                 <a
                   onClick={() => {
                     this.scrolling(this.photos);
                   }}
-                  className="btn-style nav-item nav-link">
+                  className="btn-style nav-item nav-link" style={nav}>
                   Photos
                 </a>
                 <a
                   onClick={() => {
                     this.scrolling(this.contact);
                   }}
-                  className="btn-style nav-item nav-link">
+                  className="btn-style nav-item nav-link" style={nav}>
                   Contact
                 </a>
               </div>

@@ -1,7 +1,7 @@
 import React from 'react';
 import $ from "jquery";
 import PropTypes from "prop-types";
-import '.././styles/pic.css';
+import '.././styles/style.css';
 import img1 from '.././styles/img/img1.jpg';
 import img2 from '.././styles/img/img2.jpg';
 import img3 from '.././styles/img/img3.jpg';
@@ -50,116 +50,116 @@ export default class Photos extends React.Component {
   }
 
   render() {
-    const imgSize = {
-      height:'35em',
-       width:'45em'
-    }
+
     return <div className="main">
       <div id="my-photos">
         <h1 className="title">My Photos</h1>
         <div className="wrapper">
           <a className="prev" onClick={this.scroll.bind(null,-1)}>&#10094;</a>
+
           <div className="image-container">
             <div className="image">
-              <img src={img1} alt="Landscape" style={imgSize}></img>
+              <img src={img1} alt="Landscape" ></img>
             </div>
             <div className="image">
-              <img src={img2} alt="Landscape" style={imgSize}></img>
+              <img src={img2} alt="Landscape" ></img>
             </div>
             <div className="image">
-              <img src={img3} alt="Landscape" style={imgSize}></img>
+              <img src={img3} alt="Landscape" ></img>
             </div>
             <div className="image">
-              <img src={img4} alt="Landscape" style={imgSize}></img>
+              <img src={img4} alt="Landscape" ></img>
             </div>
             <div className="image">
-              <img src={img5} alt="Landscape" style={imgSize}></img>
+              <img src={img5} alt="Landscape" ></img>
             </div>
             <div className="image">
-              <img src={img6} alt="Landscape" style={imgSize}></img>
+              <img src={img6} alt="Landscape" ></img>
             </div>
             <div className="image">
-              <img src={img7} alt="Landscape" style={imgSize}></img>
+              <img src={img7} alt="Landscape" ></img>
             </div>
             <div className="image">
-              <img src={img8} alt="Landscape" style={imgSize}></img>
+              <img src={img8} alt="Landscape" ></img>
             </div>
             <div className="image">
-              <img src={img9} alt="Landscape" style={imgSize}></img>
+              <img src={img9} alt="Landscape" ></img>
             </div>
             <div className="image">
-              <img src={img10} alt="Landscape" style={imgSize}></img>
+              <img src={img10} alt="Landscape" ></img>
             </div>
             <div className="image">
-              <img src={img11} alt="Landscape" style={imgSize}></img>
+              <img src={img11} alt="Landscape" ></img>
             </div>
             <div className="image">
-              <img src={img12} alt="Landscape" style={imgSize}></img>
+              <img src={img12} alt="Landscape" ></img>
             </div>
             <div className="image">
-              <img src={img13} alt="Landscape" style={imgSize}></img>
+              <img src={img13} alt="Landscape" ></img>
             </div>
             <div className="image">
-              <img src={img14} alt="Landscape" style={imgSize}></img>
+              <img src={img14} alt="Landscape" ></img>
             </div>
             <div className="image">
-              <img src={img15} alt="Landscape" style={imgSize}></img>
+              <img src={img15} alt="Landscape" ></img>
             </div>
             <div className="image">
-              <img src={img16} alt="Landscape" style={imgSize}></img>
+              <img src={img16} alt="Landscape" ></img>
             </div>
             <div className="image">
-              <img src={img17} alt="Landscape" style={imgSize}></img>
+              <img src={img17} alt="Landscape" ></img>
             </div>
             <div className="image">
-              <img src={img18} alt="Landscape" style={imgSize}></img>
+              <img src={img18} alt="Landscape" ></img>
             </div>
             <div className="image">
-              <img src={img19} alt="Landscape" style={imgSize}></img>
+              <img src={img19} alt="Landscape" ></img>
             </div>
             <div className="image">
-              <img src={img20} alt="Landscape" style={imgSize}></img>
+              <img src={img20} alt="Landscape" ></img>
             </div>
             <div className="image">
-              <img src={img21} alt="Landscape" style={imgSize}></img>
+              <img src={img21} alt="Landscape" ></img>
             </div>
             <div className="image">
-              <img src={img22} alt="Landscape" style={imgSize}></img>
+              <img src={img22} alt="Landscape" ></img>
             </div>
             <div className="image">
-              <img src={img23} alt="Landscape" style={imgSize}></img>
+              <img src={img23} alt="Landscape" ></img>
             </div>
             <div className="image">
-              <img src={img24} alt="Landscape" style={imgSize}></img>
+              <img src={img24} alt="Landscape" ></img>
             </div>
             <div className="image">
-              <img src={img25} alt="Landscape" style={imgSize}></img>
+              <img src={img25} alt="Landscape" ></img>
             </div>
             <div className="image">
-              <img src={img26} alt="Landscape" style={imgSize}></img>
+              <img src={img26} alt="Landscape" ></img>
             </div>
             <div className="image">
-              <img src={img27} alt="Landscape" style={imgSize}></img>
+              <img src={img27} alt="Landscape" ></img>
             </div>
             <div className="image">
-              <img src={img28} alt="Landscape" style={imgSize}></img>
+              <img src={img28} alt="Landscape" ></img>
             </div>
             <div className="image">
-              <img src={img29} alt="Landscape" style={imgSize}></img>
+              <img src={img29} alt="Landscape" ></img>
             </div>
             <div className="image">
-              <img src={img30} alt="Landscape" style={imgSize}></img>
+              <img src={img30} alt="Landscape" ></img>
             </div>
             <div className="image">
-              <img src={img31} alt="Landscape" style={imgSize}></img>
+              <img src={img31} alt="Landscape" ></img>
             </div>
             <div className="image">
-              <img src={img32} alt="Landscape" style={imgSize}></img>
+              <img src={img32} alt="Landscape" ></img>
             </div>
+
           </div>
+          <a className="next" onClick={this.scroll.bind(null,1)}>&#10095;</a>
         </div>
-        <a className="next" onClick={this.scroll.bind(null,1)}>&#10095;</a>
+
       </div>
-    </div>;
+    </div>
   }
 }

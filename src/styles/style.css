@@ -12,12 +12,16 @@
 
 
 .image {
-  font-size: 25px;
+  font-size: 23px;
   margin: 10px;
   display: inline-block;
   line-height: 100px;
 }
 
+.image-container img {
+  height: 35em;
+  width: 45em;
+}
 
 .image-container {
   vertical-align: middle;
@@ -49,4 +53,29 @@
   color: white;
   height: 100%;
   background-color: rgba(0,0,0,0.8);
+}
+
+
+
+@media only screen and (max-width: 900px) {
+  .image {
+    font-size: 23px;
+    margin: 10px;
+    display: inline-block;
+    line-height: 50px;
+  }
+
+  .image-container img {
+    height: 25em;
+    width: 30em;
+  }
+
+  .image-container {
+    vertical-align: middle;
+    display: inline-block;
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    width: 90%;
+  }
 }

@@ -1,4 +1,6 @@
 import React from "react";
+import '.././styles/style.css';
+
 
 export class Footer extends React.Component {
   render() {
@@ -17,8 +19,10 @@ export class Footer extends React.Component {
                 target="_blank"
                 rel="noopener noreferrer">
               </a>
+
             </div>
           </div>
+          <a href="#" class="scrollToTop">Scroll To Top</a>
         </div>
       </div>
     );

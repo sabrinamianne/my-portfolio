@@ -19,9 +19,9 @@ export default class Background extends React.Component {
 
 				<div className="top-container flex">
 					<h1>
-						Hello, I&apos;m Sabrina Mianne.
+						Hello Friend, I&apos;m Sabrina Mianne.
 						<br />
-						I&apos;m a Full Stack Web Developer.
+						Nice to meet you.
 					</h1>
 					<button
 						className={"work-button " + this.props.bounceIn}
