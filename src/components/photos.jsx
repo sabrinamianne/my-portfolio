@@ -1,6 +1,5 @@
 import React from 'react';
 import $ from "jquery";
-import PropTypes from "prop-types";
 import '.././styles/style.css';
 import img1 from '.././styles/img/img1.jpg';
 import img2 from '.././styles/img/img2.jpg';
@@ -53,11 +52,11 @@ export default class Photos extends React.Component {
 
     return <div className="main">
       <div id="my-photos">
-        <h1 className="title">My Photos</h1>
+        <h1 className="title" style={{fontSize:2.5+"em",fontFamily:"monospace", marginBottom:4+"em", marginTop:4+"em"}}>One of my passion is Photography, here are some of my pictures. Enjoy!</h1>
         <div className="wrapper">
           <a className="prev" onClick={this.scroll.bind(null,-1)}>&#10094;</a>
 
-          <div className="image-container">
+          <div className="image-container" >
             <div className="image">
               <img src={img1} alt="Landscape" ></img>
             </div>

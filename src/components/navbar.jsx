@@ -4,7 +4,9 @@ import Background from './background.jsx';
 import Projects from './projects.jsx';
 import Contact from './contact.jsx';
 import Photos from './photos.jsx';
-import WOW from "wow.js";
+import icone from '.././styles/img/icone.png';
+import '.././styles/style.css';
+
 
 export class Navbar extends React.Component {
   constructor(props) {
@@ -43,32 +45,36 @@ export class Navbar extends React.Component {
 			behavior: "smooth"
 		});
   }
-  componentDidMount() {
-    const WOW = require('wow.js');
-    window.wow = new WOW ({
-      live:true
-    })
-    window.wow.init();
-  }
+
 
   render() {
     const nav = {
       fontSize:"27px",
-      marginRight:"50%"
+      marginRight:"50%",
+      fontFamily:"monospace"
+    }
+
+    const iconeStyle = {
+      zIndex:"-1",
+      height:"4em",
+
     }
 
     return (
       <div>
+        <div className="scrollToTop" >
+          <a href="#"><img src={icone} alt="icone" style={iconeStyle}></img></a>
+        </div>
         <nav
           id="navbar"
-          className="navbar navbar-expand-lg navbar-light">
+          className="navbar navbar-expand-lg navbar-light" style={{position: "sticky", backgroundColor:"white"}}>
           <div className="container">
             <a
               className="home-style navbar-brand"
               onClick={() => {
                 window.scrollTo({
                   top:0,
-                  behavior:"smooth"
+                  behavior:"smooth",
                 });
               }}>
             </a>
@@ -85,7 +91,6 @@ export class Navbar extends React.Component {
 						<div
 							className="collapse navbar-collapse"
 							id="navbarNavAltMarkup"
-
               >
 
               <div className="navbar-nav">
@@ -155,6 +160,7 @@ export class Navbar extends React.Component {
           shake={"wow pulse"}
         />
       </div>
+
     );
   }
 }

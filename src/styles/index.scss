@@ -20,6 +20,11 @@
     background-repeat:round;
 }
 
+.background img {
+    z-index: 1000;
+    position: relative;
+}
+
 .top-container {
     text-align: center;
     position: absolute;
@@ -39,18 +44,19 @@
 .work-button {
     margin-top: 1rem;
     padding: .2rem 2rem;
-    background-color: #f8f9fa;
-    color: black;
+    background-color: #e3e1de;
+    color: #cf9a30;
     border-radius: 2rem;
     border: 1px #122444 solid;
     outline: none;
     -moz-outline-style: none;
     font-size: 1.2rem;
-    font-weight: 600;
+    font-weight: 900;
+
 }
 .work-button:hover {
-    background-color: #122444;
-    color: white;
+    background-color: #cf9a30;
+    color: black;
     cursor: pointer;
 }
 .work-button:focus {
@@ -65,8 +71,8 @@
 }
 
 #footer {
-    background-color: #061b3d;
-    color: gray;
+    background-color:white;
+    color: white;
     z-index: 1000;
 }
 

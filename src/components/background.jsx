@@ -1,6 +1,5 @@
 import React from "react";
 import PropTypes from "prop-types";
-
 import WOW from "wow.js";
 
 export default class Background extends React.Component {
@@ -17,7 +16,7 @@ export default class Background extends React.Component {
 		return (
 			<div id="my-background" className="background">
 
-				<div className="top-container flex">
+				<div className="top-container flex" style={{fontFamily:"monospace"}}>
 					<h1>
 						Hello Friend, I&apos;m Sabrina Mianne.
 						<br />

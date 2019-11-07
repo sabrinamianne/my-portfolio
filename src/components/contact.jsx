@@ -6,15 +6,15 @@ export default class Contact extends React.Component {
 render() {
   return (
     <div id="my-contact" className="container text-center my-5">
-      <h1 id="contact" className={"mb-3 " + this.props.fadeInLeft}>
-        Contact
+      <h1 id="contact" className={"mb-3 " + this.props.fadeInLeft} style={{marginTop:2+"em",fontSize:8+"em", fontFamily:"monospace"}}>
+        Contact me
       </h1>
       <form
         className={this.props.shake}
-        action="https://formspree.io/example@email.com"
+        action="https://formspree.io/xoqaogdj"
         method="POST">
-        <div className="form-group">
-          <div className="row">
+        <div className="form-group" style={{marginTop:10+"em"}}>
+          <div className="row" >
             <div className="col-12 col-sm-12 col-md-6 mx-auto">
               <input
                 type="text"
@@ -27,7 +27,7 @@ render() {
           </div>
         </div>
         <div className="form-group hidden">
-          <div className="row">
+          <div className="row" >
             <div className="col-12 col-sm-12 col-md-6 mx-auto">
               <input
                 type="email"
@@ -46,7 +46,7 @@ render() {
                 name="message"
                 className="form-control form-control-lg"
                 id="exampleFormControlTextarea1"
-                rows="3"
+                rows="10"
                 placeholder="Write your message..."
               />
             </div>
@@ -56,7 +56,7 @@ render() {
           <div className="col-12 col-sm-12 col-md-6 mx-auto">
             <button
               type="submit"
-              className="btn btn-primary mb-2 hidden">
+              className="btn btn-warning mb-2 hidden">
               Submit
             </button>
           </div>

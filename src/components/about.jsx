@@ -2,16 +2,17 @@ import React from "react";
 import PropTypes from "prop-types";
 import me from ".././styles/img/portrait.jpg";
 
+
 export default class About extends React.Component {
 	render() {
 		return (
 			<div
 				id="about-container"
 				className="content-containers container text-center mt-5">
-				<h1 id="about" className={this.props.bounceLeft}>
+				<h1 id="about" className={this.props.bounceLeft} style={{fontSize:5+"em",fontFamily:"monospace"}}>
 					Full Stack Developer
 				</h1>
-				<img src={me} style={{ borderRadius: 50 + "%", marginTop: 4 +"rem" , marginLeft:"auto", marginRight: "auto", display: "block", width: 30 + "%"}}></img>
+				<img src={me} alt="me" style={{ borderRadius: 50 + "%", marginTop: 4 +"rem" , marginLeft:"auto", marginRight: "auto", display: "block", width: 30 + "%"}}></img>
 				<div className="row mt-5">
 					<div
 						className={
@@ -20,13 +21,13 @@ export default class About extends React.Component {
 					</div>
 				</div>
 
-				<div className="row" style={{ marginTop: 7 + "rem" }}>
+				<div className="row" style={{ marginTop: 7 + "rem", fontFamily:"monospace",marginLeft:0}}>
 					<div className="col-12 col-lg-6 hidden">
 
-						<p className={"mytext pt-3 " + this.props.fadeIn} >
-							Since beginning my journey as a freelance designer nearly 8 years ago, I've done remote work for agencies, consulted for startups, and collaborated with talented people to create digital products for both business and consumer use. Since beginning my journey as a freelance designer nearly 8 years ago,
+						<p className={"mytext pt-3 " + this.props.fadeIn}  >
+							Since beginning my journey as a freelance designer nearly 8 years ago, I've done remote work for agencies, consulted for startups, and collaborated with talented people to create digital products for both business and consumer use.
 						</p>
-						<p className={"mytext pt-3 " + this.props.fadeIn} >Since beginning my journey as a freelance designer nearly 8 years ago, I've done remote work for agencies, consulted for startups, and collaborated with talented people to create digital products for both business and consumer use. Since beginning my journey as a freelance designer nearly 8 years ago, I've done remote work for agencies
+						<p className={"mytext pt-3 " + this.props.fadeIn} >Since beginning my journey as a freelance designer nearly 8 years ago, I've done remote work for agencies, consulted for startups, and collaborated with talented people to create digital products for both business and consumer use.
 						</p>
 					</div>
 					<div
