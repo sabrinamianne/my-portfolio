@@ -19,8 +19,8 @@
 }
 
 .image-container img {
-  height: 31em;
-  width: 45em;
+  height: 32em;
+  width: 48em;
 }
 
 .image-container {
@@ -77,8 +77,6 @@
   margin-right: 2em;
   border: 1px solid #FFEFCA  ;
   border-radius: 3%;
-
-
   perspective: 800px; /* Remove this if you don't want the 3D effect */
 }
 
@@ -86,7 +84,6 @@
   width: 95%;
   height: 100%;
   border-radius: 3%;
-
 }
 
 /* This container is needed to position the front and back side */
@@ -131,6 +128,11 @@
   transform: rotateY(180deg);
   border-radius: 3%;
   font-family:'Freight Display Pro',serif
+}
+
+.flip-card-back img {
+  height:80px;
+  width: 90px;
 }
 
 
@@ -202,10 +204,50 @@
 }
 
 /* Responsive columns - one column layout (vertical) on small screens */
-@media screen and (max-width: 1600px) {
+@media screen and (min-width: 1400px) and (max-width: 1960px) {
+  .column {
+    width: 50%;
+    display: block;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (min-width: 800px) and (max-width: 1400px) {
+  .column {
+    width: 50%;
+    display: block;
+    margin-bottom: 10px;
+    margin-left: 20%;
+    margin-right: 25%;;
+  }
+
+  .flip-card {
+    background-color: transparent;
+    width: 30em;
+    height: 20em;
+  }
+}
+
+@media screen and (max-width: 800px) {
   .column {
     width: 100%;
     display: block;
     margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
   }
+  .flip-card {
+    background-color: transparent;
+    width: 25em;
+    height: 20em;
+  }
+
+  .flip-card-back a img {
+    height:35px;
+    width: 25px;
+  }
+
+
 }

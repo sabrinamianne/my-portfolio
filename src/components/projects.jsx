@@ -29,7 +29,7 @@ render() {
               <img src={capture1} alt="Hairstyle" ></img>
             </div>
           <div className="flip-card-back">
-            <h1>John Doe</h1>
+            <h3>John Doe</h3>
             <p>Architect & Engineer</p>
             <p>We love that guy</p>
           </div>
@@ -45,7 +45,7 @@ render() {
               <img src={capture2} alt="Hairstyle" ></img>
             </div>
           <div className="flip-card-back">
-            <h1>John Doe</h1>
+            <h3>John Doe</h3>
             <p>Architect & Engineer</p>
             <p>We love that guy</p>
           </div>
@@ -61,7 +61,7 @@ render() {
               <img src={capture3} alt="Hairstyle" ></img>
             </div>
           <div className="flip-card-back">
-            <h1>John Doe</h1>
+            <h3>John Doe</h3>
             <p>Architect & Engineer</p>
             <p>We love that guy</p>
           </div>
@@ -77,7 +77,7 @@ render() {
               <img src={capture4} alt="Hairstyle" ></img>
             </div>
           <div className="flip-card-back">
-            <h1>John Doe</h1>
+            <h3>John Doe</h3>
             <p>Architect & Engineer</p>
             <p>We love that guy</p>
           </div>
@@ -93,8 +93,8 @@ render() {
               <img src={capture5} alt="Hairstyle" ></img>
             </div>
           <div className="flip-card-back">
-            <h1>Music Store</h1>
-              <h3 style={{marginBottom:2+"em"}}> A website for a Music Store</h3>
+            <h3>Music Store</h3>
+              <h5 style={{marginBottom:2+"em"}}> A website for a Music Store</h5>
                 <a href="https://github.com/sabrinamianne/Online-Store" target="_blank">
                   <img src={gitHub} style={{height:80+"px", width: 90+"px"}}></img>
                 </a>
@@ -115,15 +115,15 @@ render() {
               <img src={capture6} alt="managemylease" ></img>
             </div>
           <div className="flip-card-back">
-            <h1>Manage my Lease</h1>
-              <h3 style={{marginBottom:2+"em"}}> A template for a Real Estate website</h3>
+            <h3>Manage my Lease</h3>
+              <h5 style={{marginBottom:2+"em"}}> A template for a Real Estate website</h5>
                 <a href="https://github.com/sabrinamianne/manage-my-lease" target="_blank">
-                  <img src={gitHub} style={{height:80+"px", width: 90+"px"}}></img>
+                  <img id="iconeImg" src={gitHub} ></img>
                 </a>
                 <a href="https://manage-my-lease-1564343515642.firebaseapp.com/" target="_blank">
-                  <img src={website} style={{height:80+"px", width: 90+"px"}}></img>
+                  <img src={website} ></img>
                 </a>
-              <p style={{marginTop:5+"em"}}> React - Mapbox - react-map-gl </p>
+              <p style={{marginTop:7+"em"}}> React - Mapbox - react-map-gl </p>
           </div>
         </div>
       </div>

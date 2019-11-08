@@ -50,7 +50,8 @@ export class Navbar extends React.Component {
   render() {
     const nav = {
       fontSize:"27px",
-      marginRight:"50%",
+      marginRight:"25%",
+      marginLeft:"5%",
       fontFamily:"monospace"
     }
 

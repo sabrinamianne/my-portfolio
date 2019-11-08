@@ -22,19 +22,24 @@ export default class About extends React.Component {
 				</div>
 
 				<div className="row" style={{ marginTop: 7 + "rem", fontFamily:"monospace",marginLeft:0}}>
-					<div className="col-12 col-lg-6 hidden">
-
-						<p className={"mytext pt-3 " + this.props.fadeIn}  >
-							Since beginning my journey as a freelance designer nearly 8 years ago, I've done remote work for agencies, consulted for startups, and collaborated with talented people to create digital products for both business and consumer use.
+					<div className="col-6 col-lg-6 hidden" style={{paddingRight:15+"em"}}>
+						<p className={"mytext pt-3 " + this.props.fadeIn} style={{fontSize:18+"px"}}>
+							I have been passionate about creating things since my early childhood,
+							 I loved creating new games, I wrote a lot of stories, poems, songs that my sisters loved and sang,
+							 from what they told me.
+							 I think that's what attracted me primarily in coding, having to create lines of code,
+							 improving existing code, looking for new ways to improve an application.
 						</p>
-						<p className={"mytext pt-3 " + this.props.fadeIn} >Since beginning my journey as a freelance designer nearly 8 years ago, I've done remote work for agencies, consulted for startups, and collaborated with talented people to create digital products for both business and consumer use.
+						<p className={"mytext pt-3 " + this.props.fadeIn} style={{fontSize:18+"px"}}>
+							After many years looking for what I wanted to do in my life,
+						 I am happy now to have finally found what drives me.
 						</p>
 					</div>
 					<div
 						className={
-							"col-12 col-sm-12 col-md-12 col-lg-6 " +
+							"col-6 col-lg-6 " +
 							this.props.tada
-						}>
+						} style={{paddingLeft:15+"em"}}>
 						<div className="progress mb-3">
 							<div
 								className="progress-bar bg-warning fill-80-bar"
@@ -43,36 +48,6 @@ export default class About extends React.Component {
 								aria-valuemin="0"
 								aria-valuemax="100">
 								Javascript
-							</div>
-						</div>
-						<div className="progress mb-3">
-							<div
-								className="progress-bar bg-warning fill-80-bar"
-								role="progressbar"
-								style={{ width: 70 + "%" }}
-								aria-valuemin="0"
-								aria-valuemax="100">
-								C#
-							</div>
-						</div>
-						<div className="progress mb-3">
-							<div
-								className="progress-bar bg-warning fill-90-bar"
-								role="progressbar"
-								style={{ width: 60 + "%" }}
-								aria-valuemin="0"
-								aria-valuemax="100">
-								PYTHON
-							</div>
-						</div>
-						<div className="progress mb-3">
-							<div
-								className="progress-bar bg-warning fill-60-bar"
-								role="progressbar"
-								style={{ width: 50 + "%" }}
-								aria-valuemin="0"
-								aria-valuemax="100">
-								PHP
 							</div>
 						</div>
 						<div className="progress mb-3">
@@ -89,16 +64,6 @@ export default class About extends React.Component {
 							<div
 								className="progress-bar bg-warning fill-80-bar"
 								role="progressbar"
-								style={{ width: 70 + "%" }}
-								aria-valuemin="0"
-								aria-valuemax="100">
-								ReactJS
-							</div>
-						</div>
-						<div className="progress mb-3">
-							<div
-								className="progress-bar bg-warning fill-80-bar"
-								role="progressbar"
 								style={{ width: 80 + "%" }}
 								aria-valuemin="0"
 								aria-valuemax="100">
@@ -109,10 +74,10 @@ export default class About extends React.Component {
 							<div
 								className="progress-bar bg-warning fill-60-bar"
 								role="progressbar"
-								style={{ width: 60 + "%" }}
+								style={{ width: 80 + "%" }}
 								aria-valuemin="0"
 								aria-valuemax="100">
-								NodeJs
+								CSS
 							</div>
 						</div>
 						<div className="progress mb-3">
@@ -123,6 +88,26 @@ export default class About extends React.Component {
 								aria-valuemin="0"
 								aria-valuemax="100">
 								Bootstrap
+							</div>
+						</div>
+						<div className="progress mb-3">
+							<div
+								className="progress-bar bg-warning fill-80-bar"
+								role="progressbar"
+								style={{ width: 70 + "%" }}
+								aria-valuemin="0"
+								aria-valuemax="100">
+								C#
+							</div>
+						</div>
+						<div className="progress mb-3">
+							<div
+								className="progress-bar bg-warning fill-80-bar"
+								role="progressbar"
+								style={{ width: 70 + "%" }}
+								aria-valuemin="0"
+								aria-valuemax="100">
+								ReactJS
 							</div>
 						</div>
 						<div className="progress mb-3">
@@ -139,10 +124,20 @@ export default class About extends React.Component {
 							<div
 								className="progress-bar bg-warning fill-60-bar"
 								role="progressbar"
-								style={{ width: 80 + "%" }}
+								style={{ width: 60 + "%" }}
 								aria-valuemin="0"
 								aria-valuemax="100">
-								CSS
+								SASS
+							</div>
+						</div>
+						<div className="progress mb-3">
+							<div
+								className="progress-bar bg-warning fill-90-bar"
+								role="progressbar"
+								style={{ width: 60 + "%" }}
+								aria-valuemin="0"
+								aria-valuemax="100">
+								PYTHON
 							</div>
 						</div>
 						<div className="progress mb-3">
@@ -152,9 +147,21 @@ export default class About extends React.Component {
 								style={{ width: 60 + "%" }}
 								aria-valuemin="0"
 								aria-valuemax="100">
-								SASS
+								NodeJs
 							</div>
 						</div>
+						<div className="progress mb-3">
+							<div
+								className="progress-bar bg-warning fill-60-bar"
+								role="progressbar"
+								style={{ width: 50 + "%" }}
+								aria-valuemin="0"
+								aria-valuemax="100">
+								PHP
+							</div>
+						</div>
+
+
 					</div>
 				</div>
 			</div>
