@@ -9,6 +9,7 @@ import capture5 from '.././styles/img/capture5.png';
 import capture6 from '.././styles/img/capture6.png';
 import gitHub from '.././styles/img/git.png';
 import website from '.././styles/img/internet.jpg';
+import bg from '.././styles/img/bgCard.jpg';
 
 
 export default class Projects extends React.Component {
@@ -18,9 +19,8 @@ render() {
   }
 
   return (
-
 <div id="my-projects" >
-  <div className="row" style={{borderTop:1+"px solid #d9b99b", marginLeft:6+"em", marginRight:6+"em", marginTop:4+"em"}}>
+  <div className="row" style={{borderTop:1+"px solid #29003b", marginLeft:6+"em", marginRight:6+"em", marginTop:4+"em"}}>
     <div className="column">
       <div className="card-1">
         <div className="flip-card" >
@@ -28,13 +28,17 @@ render() {
             <div className="flip-card-front">
               <img src={capture1} alt="Hairstyle" ></img>
             </div>
-          <div className="flip-card-back">
-            <h3>John Doe</h3>
-            <p>Architect & Engineer</p>
-            <p>We love that guy</p>
+            <div className="flip-card-back">
+              <div style={{backgroundColor:"white", height:200+"px", width:300+"px", marginLeft:"auto", marginRight:"auto",marginTop:3+"em"}}>
+                <h4>HairStyle Website</h4>
+                    <a href="https://github.com/sabrinamianne/HairSalon.Solution2" target="_blank">
+                      <img id="iconeImg" src={gitHub} style={{}}></img>
+                    </a>
+                  <p style={{marginTop:2+"em"}}> C#</p>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
       </div>
     </div>
     <div className="column">
@@ -42,15 +46,22 @@ render() {
         <div className="flip-card" >
           <div className="flip-card-inner">
             <div className="flip-card-front">
-              <img src={capture2} alt="Hairstyle" ></img>
+              <img src={capture2} alt="Etsy clone" ></img>
             </div>
-          <div className="flip-card-back">
-            <h3>John Doe</h3>
-            <p>Architect & Engineer</p>
-            <p>We love that guy</p>
+            <div className="flip-card-back">
+              <div style={{backgroundColor:"white", height:200+"px", width:300+"px", marginLeft:"auto", marginRight:"auto",marginTop:3+"em"}}>
+                <h4>HairStyle Website</h4>
+                    <a href="https://github.com/sabrinamianne/Etsy-clone" target="_blank">
+                      <img id="iconeImg" src={gitHub}></img>
+                    </a>
+                    <a href="https://etsy-clone-5a30f.firebaseapp.com" target="_blank">
+                      <img src={website} ></img>
+                    </a>
+                  <p style={{marginTop:2+"em"}}> C#</p>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
       </div>
     </div>
     <div className="column">
@@ -60,13 +71,17 @@ render() {
             <div className="flip-card-front">
               <img src={capture3} alt="Hairstyle" ></img>
             </div>
-          <div className="flip-card-back">
-            <h3>John Doe</h3>
-            <p>Architect & Engineer</p>
-            <p>We love that guy</p>
+            <div className="flip-card-back">
+              <div style={{backgroundColor:"white", height:200+"px", width:300+"px", marginLeft:"auto", marginRight:"auto",marginTop:3+"em"}}>
+                <h4>Tap Room</h4>
+                    <a href="https://github.com/sabrinamianne/Tap-Room" target="_blank">
+                      <img id="iconeImg" src={gitHub}></img>
+                    </a>
+                  <p style={{marginTop:2+"em"}}> React</p>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
       </div>
     </div>
     <div className="column">
@@ -76,10 +91,17 @@ render() {
             <div className="flip-card-front">
               <img src={capture4} alt="Hairstyle" ></img>
             </div>
-          <div className="flip-card-back">
-            <h3>John Doe</h3>
-            <p>Architect & Engineer</p>
-            <p>We love that guy</p>
+            <div className="flip-card-back">
+              <div style={{backgroundColor:"white", height:200+"px", width:300+"px", marginLeft:"auto", marginRight:"auto",marginTop:3+"em"}}>
+                <h4>Three-Card Tarot Reading</h4>
+                    <a href="https://github.com/Kennedy777/TarotReading" target="_blank">
+                      <img id="iconeImg" src={gitHub}></img>
+                    </a>
+                    <a href="https://kennedy777.github.io/TarotReading/" target="_blank">
+                      <img src={website} ></img>
+                    </a>
+                  <p style={{marginTop:2+"em"}}>  HTML - JavaScript</p>
+              </div>
           </div>
         </div>
       </div>
@@ -93,19 +115,20 @@ render() {
               <img src={capture5} alt="Hairstyle" ></img>
             </div>
           <div className="flip-card-back">
-            <h3>Music Store</h3>
-              <h5 style={{marginBottom:2+"em"}}> A website for a Music Store</h5>
+            <div style={{backgroundColor:"white", height:200+"px", width:300+"px", marginLeft:"auto", marginRight:"auto",marginTop:3+"em"}}>
+              <h4>Music Store</h4>
                 <a href="https://github.com/sabrinamianne/Online-Store" target="_blank">
-                  <img src={gitHub} style={{height:80+"px", width: 90+"px"}}></img>
+                  <img id="iconeImg" src={gitHub}></img>
                 </a>
                 <a href="https://online-store-de73c.web.app/admin" target="_blank">
-                  <img src={website} style={{height:80+"px", width: 90+"px"}}></img>
+                  <img src={website} ></img>
                 </a>
-              <p style={{marginTop:5+"em"}}> Angular - Firebase </p>
+              <p style={{marginTop:2+"em"}}>  Angular - Firebase </p>
+            </div>
           </div>
         </div>
       </div>
-      </div>
+    </div>
     </div>
     <div className="column">
       <div className="card-1">
@@ -114,19 +137,17 @@ render() {
             <div className="flip-card-front">
               <img src={capture6} alt="managemylease" ></img>
             </div>
-          <div className="flip-card-back">
-            <h3>Manage my Lease</h3>
-              <h5 style={{marginBottom:2+"em"}}> A template for a Real Estate website</h5>
-                <a href="https://github.com/sabrinamianne/manage-my-lease" target="_blank">
-                  <img id="iconeImg" src={gitHub} ></img>
-                </a>
-                <a href="https://manage-my-lease-1564343515642.firebaseapp.com/" target="_blank">
-                  <img src={website} ></img>
-                </a>
-              <p style={{marginTop:7+"em"}}> React - Mapbox - react-map-gl </p>
+            <div className="flip-card-back">
+              <div style={{backgroundColor:"white", height:200+"px", width:300+"px", marginLeft:"auto", marginRight:"auto",marginTop:3+"em"}}>
+                <h4>Real Estate Website Template</h4>
+                  <a href="https://github.com/sabrinamianne/manage-my-lease" target="_blank">
+                    <img id="iconeImg" src={gitHub} ></img>
+                  </a>
+                <p style={{marginTop:2+"em"}}> React - Mapbox - react-map-gl  </p>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
       </div>
     </div>
   </div>

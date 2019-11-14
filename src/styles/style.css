@@ -75,7 +75,6 @@
   height: 25em;
   margin-left: 1em;
   margin-right: 2em;
-  border: 1px solid #FFEFCA  ;
   border-radius: 3%;
   perspective: 800px; /* Remove this if you don't want the 3D effect */
 }
@@ -117,17 +116,19 @@
 .flip-card-front {
   background-color: transparent;
   color: #faf0e6;
+  padding:1em;
 }
 
 /* Style the back side */
 .flip-card-back {
-  background-color: transparent;
-  color:#2d3145;
-  font-weight: bold;
-  font-size: 20px;
+  background-image: url(./img/bgCard.jpg);
+  color:#474747;
+  font-weight: 900;
+  font-size: 19px;
   transform: rotateY(180deg);
   border-radius: 3%;
-  font-family:'Freight Display Pro',serif
+  font-family:'Freight Display Pro',serif;
+
 }
 
 .flip-card-back img {
@@ -165,11 +166,6 @@
     right: 2em;
     bottom: 1em;
   }
-
-  .flip-card-inner {
-
-  }
-
 }
 
 
@@ -245,8 +241,8 @@
   }
 
   .flip-card-back a img {
-    height:35px;
-    width: 25px;
+    height:50px;
+    width: 40px;
   }
 
 

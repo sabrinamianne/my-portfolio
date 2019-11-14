@@ -52,7 +52,9 @@ export default class Photos extends React.Component {
 
     return <div className="main">
       <div id="my-photos">
-        <h1 className="title" style={{fontSize:2.5+"em",fontFamily:"monospace", marginBottom:4+"em", marginTop:4+"em"}}>One of my passion is Photography, here are some of my pictures. Enjoy!</h1>
+        <h1 className="title" style={{fontSize:2.5+"em",fontFamily:"monospace", marginBottom:4+"em", marginTop:4+"em"}}>
+          One of my passions is photography, here are some of my photos. Have a good time!
+        </h1>
         <div className="wrapper">
           <a className="prev" onClick={this.scroll.bind(null,-1)}>&#10094;</a>
 

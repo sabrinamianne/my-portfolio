@@ -1,6 +1,20 @@
 import React from "react";
 import PropTypes from "prop-types";
 import me from ".././styles/img/portrait.jpg";
+import html from ".././styles/img/skills/html.png";
+import css from ".././styles/img/skills/css.png";
+import js from ".././styles/img/skills/js.png";
+import python from ".././styles/img/skills/python.png";
+import cSharp from ".././styles/img/skills/cSharp.png";
+import php from ".././styles/img/skills/php.png";
+import react from ".././styles/img/skills/react.png";
+import angular from ".././styles/img/skills/angular.png";
+import node from ".././styles/img/skills/node.png";
+import boot from ".././styles/img/skills/boot.png";
+import sql from ".././styles/img/skills/mySql.png";
+import firebase from ".././styles/img/skills/firebase.png";
+import git from ".././styles/img/skills/git.png";
+import wp from ".././styles/img/skills/wordpress.png";
 
 
 export default class About extends React.Component {
@@ -10,7 +24,7 @@ export default class About extends React.Component {
 				id="about-container"
 				className="content-containers container text-center mt-5">
 				<h1 id="about" className={this.props.bounceLeft} style={{fontSize:5+"em",fontFamily:"monospace"}}>
-					Full Stack Developer
+					Full Stack Developer Junior
 				</h1>
 				<img src={me} alt="me" style={{ borderRadius: 50 + "%", marginTop: 4 +"rem" , marginLeft:"auto", marginRight: "auto", display: "block", width: 30 + "%"}}></img>
 				<div className="row mt-5">
@@ -21,150 +35,40 @@ export default class About extends React.Component {
 					</div>
 				</div>
 
-				<div className="row" style={{ marginTop: 7 + "rem", fontFamily:"monospace",marginLeft:0}}>
-					<div className="col-6 col-lg-6 hidden" style={{paddingRight:15+"em"}}>
-						<p className={"mytext pt-3 " + this.props.fadeIn} style={{fontSize:18+"px"}}>
+				<div className="row" style={{ marginTop: 5 + "rem", fontFamily:"monospace",marginLeft:0}}>
+					<div className="col-12 col-lg-12 hidden" style={{textAlign:"center"}}>
+						<p className={"mytext pt-3 " + this.props.fadeIn} style={{fontSize:23+"px"}}>
 							I have been passionate about creating things since my early childhood,
 							 I loved creating new games, I wrote a lot of stories, poems, songs that my sisters loved and sang,
 							 from what they told me.
 							 I think that's what attracted me primarily in coding, having to create lines of code,
 							 improving existing code, looking for new ways to improve an application.
 						</p>
-						<p className={"mytext pt-3 " + this.props.fadeIn} style={{fontSize:18+"px"}}>
+						<p className={"mytext pt-3 " + this.props.fadeIn} style={{fontSize:23+"px"}}>
 							After many years looking for what I wanted to do in my life,
 						 I am happy now to have finally found what drives me.
 						</p>
 					</div>
-					<div
-						className={
-							"col-6 col-lg-6 " +
-							this.props.tada
-						} style={{paddingLeft:15+"em"}}>
-						<div className="progress mb-3">
-							<div
-								className="progress-bar bg-warning fill-80-bar"
-								role="progressbar"
-								style={{ width: 90 + "%" }}
-								aria-valuemin="0"
-								aria-valuemax="100">
-								Javascript
-							</div>
-						</div>
-						<div className="progress mb-3">
-							<div
-								className="progress-bar bg-warning fill-80-bar"
-								role="progressbar"
-								style={{ width: 90 + "%" }}
-								aria-valuemin="0"
-								aria-valuemax="100">
-								HTML5
-							</div>
-						</div>
-						<div className="progress mb-3">
-							<div
-								className="progress-bar bg-warning fill-80-bar"
-								role="progressbar"
-								style={{ width: 80 + "%" }}
-								aria-valuemin="0"
-								aria-valuemax="100">
-								AngularJS
-							</div>
-						</div>
-						<div className="progress mb-3">
-							<div
-								className="progress-bar bg-warning fill-60-bar"
-								role="progressbar"
-								style={{ width: 80 + "%" }}
-								aria-valuemin="0"
-								aria-valuemax="100">
-								CSS
-							</div>
-						</div>
-						<div className="progress mb-3">
-							<div
-								className="progress-bar bg-warning fill-80-bar"
-								role="progressbar"
-								style={{ width: 80 + "%" }}
-								aria-valuemin="0"
-								aria-valuemax="100">
-								Bootstrap
-							</div>
-						</div>
-						<div className="progress mb-3">
-							<div
-								className="progress-bar bg-warning fill-80-bar"
-								role="progressbar"
-								style={{ width: 70 + "%" }}
-								aria-valuemin="0"
-								aria-valuemax="100">
-								C#
-							</div>
-						</div>
-						<div className="progress mb-3">
-							<div
-								className="progress-bar bg-warning fill-80-bar"
-								role="progressbar"
-								style={{ width: 70 + "%" }}
-								aria-valuemin="0"
-								aria-valuemax="100">
-								ReactJS
-							</div>
-						</div>
-						<div className="progress mb-3">
-							<div
-								className="progress-bar bg-warning fill-60-bar"
-								role="progressbar"
-								style={{ width: 70 + "%" }}
-								aria-valuemin="0"
-								aria-valuemax="100">
-								JQuery
-							</div>
-						</div>
-						<div className="progress mb-3">
-							<div
-								className="progress-bar bg-warning fill-60-bar"
-								role="progressbar"
-								style={{ width: 60 + "%" }}
-								aria-valuemin="0"
-								aria-valuemax="100">
-								SASS
-							</div>
-						</div>
-						<div className="progress mb-3">
-							<div
-								className="progress-bar bg-warning fill-90-bar"
-								role="progressbar"
-								style={{ width: 60 + "%" }}
-								aria-valuemin="0"
-								aria-valuemax="100">
-								PYTHON
-							</div>
-						</div>
-						<div className="progress mb-3">
-							<div
-								className="progress-bar bg-warning fill-60-bar"
-								role="progressbar"
-								style={{ width: 60 + "%" }}
-								aria-valuemin="0"
-								aria-valuemax="100">
-								NodeJs
-							</div>
-						</div>
-						<div className="progress mb-3">
-							<div
-								className="progress-bar bg-warning fill-60-bar"
-								role="progressbar"
-								style={{ width: 50 + "%" }}
-								aria-valuemin="0"
-								aria-valuemax="100">
-								PHP
-							</div>
-						</div>
+				</div>
+				<div className="skills" style={{marginTop:8+"em"}}>
 
-
-					</div>
+					<img src={python} alt="python icone" style={{height:45+"px",marginLeft:1.7+"em"}}></img>
+					<img src={cSharp} alt="cSharp icone" style={{height:60+"px",marginLeft:2+"em"}}></img>
+					<img src={php} alt="php icone" style={{height:40+"px",marginLeft:2+"em", width:4+"em"}}></img>
+					<img src={js} alt="js icone" style={{height:45+"px",marginLeft:0.8+"em"}}></img>
+					<img src={html} alt="html icone" style={{height:50+"px"}}></img>
+					<img src={css} alt="css icone" style={{height:50+"px",marginLeft:2+"em"}}></img>
+					<img src={boot} alt="bootstrap icone" style={{height:45+"px",marginLeft:2+"em"}}></img>
+					<img src={react} alt="react icone" style={{height:45+"px",marginLeft:2+"em"}}></img>
+					<img src={angular} alt="angular icone" style={{height:50+"px",marginLeft:2+"em"}}></img>
+					<img src={wp} alt="wordpress icone" style={{height:43+"px",marginLeft:2+"em"}}></img>
+					<img src={node} alt="node icone" style={{height:42+"px",marginLeft:2+"em"}}></img>
+				  <img src={sql} alt="mySql icone" style={{height:42+"px",marginLeft:2+"em",width:4+"em"}}></img>
+					<img src={firebase} alt="firebase icone" style={{height:45+"px",marginLeft:2+"em"}}></img>
+					<img src={git} alt="git icone" style={{height:42+"px",marginLeft:2+"em"}}></img>
 				</div>
 			</div>
+
 		);
 	}
 }
