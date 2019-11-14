@@ -27,7 +27,7 @@ export default class Background extends React.Component {
 						data-wow-offset="0"
 						onClick={() => {
 							let node = document.getElementById(
-								this.props.aboutRef.current.props.id
+								this.props.projectsRef.current.props.id
 							);
 							window.scrollTo({
 								top: node.offsetTop,
@@ -43,6 +43,6 @@ export default class Background extends React.Component {
 }
 
 Background.propTypes = {
-	aboutRef: PropTypes.object,
+	projectsRef: PropTypes.object,
 	bounceIn: PropTypes.string
 };

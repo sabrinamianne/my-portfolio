@@ -37,7 +37,6 @@ export default class Navbar extends Component {
   }
 
   render() {
-
     const nav = {
       fontSize:"27px",
       marginRight:"25%",
@@ -105,7 +104,7 @@ export default class Navbar extends Component {
     <Background
       ref={this.navEffect}
       id="my-background"
-      aboutRef={this.about}
+      projectsRef={this.projects}
       bounceIn={"wow bounceIn"}
     />
     <About

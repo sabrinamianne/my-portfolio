@@ -38,37 +38,36 @@ export default class About extends React.Component {
 				<div className="row" style={{ marginTop: 5 + "rem", fontFamily:"monospace",marginLeft:0}}>
 					<div className="col-12 col-lg-12 hidden" style={{textAlign:"center"}}>
 						<p className={"mytext pt-3 " + this.props.fadeIn} style={{fontSize:23+"px"}}>
-							I have been passionate about creating things since my early childhood,
-							 I loved creating new games, I wrote a lot of stories, poems, songs that my sisters loved and sang,
-							 from what they told me.
-							 I think that's what attracted me primarily in coding, having to create lines of code,
-							 improving existing code, looking for new ways to improve an application.
+							I have been passionate about creation since my early childhood,
+							I loved creating new funny games to play with my sisters and friends.
+							I wrote a lot of stories, poems, songs that my sisters and I loved to sing,
+							from what they told me. I am confident to say that this creator side of me
+							was the trigger to start coding. Having to create new lines of code,
+							improving existing ones, looking for new ways to improve stuff,
+							being challenged and try to find solutions to problems is something that thrives me.
 						</p>
 						<p className={"mytext pt-3 " + this.props.fadeIn} style={{fontSize:23+"px"}}>
-							After many years looking for what I wanted to do in my life,
-						 I am happy now to have finally found what drives me.
+							After many years looking for what I wanted to spend my days on, I am now happy to have finally found what drives me.
 						</p>
 					</div>
 				</div>
 				<div className="skills" style={{marginTop:8+"em"}}>
-
-					<img src={python} alt="python icone" style={{height:45+"px",marginLeft:1.7+"em"}}></img>
-					<img src={cSharp} alt="cSharp icone" style={{height:60+"px",marginLeft:2+"em"}}></img>
-					<img src={php} alt="php icone" style={{height:40+"px",marginLeft:2+"em", width:4+"em"}}></img>
-					<img src={js} alt="js icone" style={{height:45+"px",marginLeft:0.8+"em"}}></img>
-					<img src={html} alt="html icone" style={{height:50+"px"}}></img>
-					<img src={css} alt="css icone" style={{height:50+"px",marginLeft:2+"em"}}></img>
-					<img src={boot} alt="bootstrap icone" style={{height:45+"px",marginLeft:2+"em"}}></img>
-					<img src={react} alt="react icone" style={{height:45+"px",marginLeft:2+"em"}}></img>
-					<img src={angular} alt="angular icone" style={{height:50+"px",marginLeft:2+"em"}}></img>
-					<img src={wp} alt="wordpress icone" style={{height:43+"px",marginLeft:2+"em"}}></img>
-					<img src={node} alt="node icone" style={{height:42+"px",marginLeft:2+"em"}}></img>
-				  <img src={sql} alt="mySql icone" style={{height:42+"px",marginLeft:2+"em",width:4+"em"}}></img>
-					<img src={firebase} alt="firebase icone" style={{height:45+"px",marginLeft:2+"em"}}></img>
-					<img src={git} alt="git icone" style={{height:42+"px",marginLeft:2+"em"}}></img>
+					<a href="https://www.python.org/" target="blank" title="python"><img src={python} alt="python icone" style={{height:45+"px",marginLeft:1.7+"em"}}></img></a>
+					<a href="https://docs.microsoft.com/en-us/dotnet/csharp/" target="blank" title="csharp"><img src={cSharp} alt="cSharp icone" style={{height:60+"px",marginLeft:2+"em"}}></img></a>
+					<a href="https://www.php.net/" target="blank" title="php"><img src={php} alt="php icone" style={{height:40+"px",marginLeft:2+"em", width:4+"em"}}></img></a>
+					<a href="https://www.javascript.com/" target="blank" title="javascript"><img src={js} alt="js icone" style={{height:45+"px",marginLeft:0.8+"em"}}></img></a>
+					<a href="https://html.com/" target="blank" title="html"><img src={html} alt="html icone" style={{height:50+"px"}}></img></a>
+					<a href="http://www.css3.info/" target="blank" title="css"><img src={css} alt="css icone" style={{height:50+"px",marginLeft:2+"em"}}></img></a>
+					<a href="https://getbootstrap.com/" target="blank" title="bootstrap"><img src={boot} alt="bootstrap icone" style={{height:45+"px",marginLeft:2+"em"}}></img></a>
+					<a href="https://reactjs.org/" target="blank" title="react"><img src={react} alt="react icone" style={{height:45+"px",marginLeft:2+"em"}}></img></a>
+					<a href="https://angular.io/" target="blank" title="angular"><img src={angular} alt="angular icone" style={{height:50+"px",marginLeft:2+"em"}}></img></a>
+					<a href="https://wordpress.org/" target="blank" title="wordpress"><img src={wp} alt="wordpress icone" style={{height:43+"px",marginLeft:2+"em"}}></img></a>
+					<a href="https://nodejs.org/en/" target="blank" title="nodejs"><img src={node} alt="node icone" style={{height:42+"px",marginLeft:2+"em"}}></img></a>
+					<a href="https://www.mysql.com/" target="blank" title="mysql"><img src={sql} alt="mySql icone" style={{height:42+"px",marginLeft:2+"em",width:4+"em"}}></img></a>
+					<a href="https://firebase.google.com/?gclid=Cj0KCQiAk7TuBRDQARIsAMRrfUaCDoeSls04SvHFnlqRtqZL-4BmAWjDjHUj9UAX-TeC_c-3pYbP00QaArwWEALw_wcB" target="blank" title="firebase"><img src={firebase} alt="firebase icone" style={{height:45+"px",marginLeft:2+"em"}}></img></a>
+					<a href="https://git-scm.com/" target="blank" title="git"><img src={git} alt="git icone" style={{height:42+"px",marginLeft:2+"em"}}></img></a>
 				</div>
 			</div>
-
 		);
 	}
 }

@@ -29,10 +29,10 @@ render() {
               <img src={capture1} alt="Hairstyle" ></img>
             </div>
             <div className="flip-card-back">
-              <div style={{backgroundColor:"white", height:200+"px", width:300+"px", marginLeft:"auto", marginRight:"auto",marginTop:3+"em"}}>
+              <div id="projects" style={{backgroundColor:"white", height:200+"px", width:300+"px", marginLeft:"auto", marginRight:"auto",marginTop:3+"em"}}>
                 <h4>HairStyle Website</h4>
                     <a href="https://github.com/sabrinamianne/HairSalon.Solution2" target="_blank">
-                      <img id="iconeImg" src={gitHub} style={{}}></img>
+                      <img id="iconeImg" src={gitHub} style={{marginTop:1+"em"}}></img>
                     </a>
                   <p style={{marginTop:2+"em"}}> C#</p>
               </div>
@@ -50,12 +50,12 @@ render() {
             </div>
             <div className="flip-card-back">
               <div style={{backgroundColor:"white", height:200+"px", width:300+"px", marginLeft:"auto", marginRight:"auto",marginTop:3+"em"}}>
-                <h4>HairStyle Website</h4>
+                <h4>Etsy Clone</h4>
                     <a href="https://github.com/sabrinamianne/Etsy-clone" target="_blank">
-                      <img id="iconeImg" src={gitHub}></img>
+                      <img id="iconeImg" src={gitHub} style={{marginTop:1+"em"}}></img>
                     </a>
                     <a href="https://etsy-clone-5a30f.firebaseapp.com" target="_blank">
-                      <img src={website} ></img>
+                      <img src={website} style={{marginTop:1+"em"}}></img>
                     </a>
                   <p style={{marginTop:2+"em"}}> C#</p>
               </div>
@@ -75,7 +75,7 @@ render() {
               <div style={{backgroundColor:"white", height:200+"px", width:300+"px", marginLeft:"auto", marginRight:"auto",marginTop:3+"em"}}>
                 <h4>Tap Room</h4>
                     <a href="https://github.com/sabrinamianne/Tap-Room" target="_blank">
-                      <img id="iconeImg" src={gitHub}></img>
+                      <img id="iconeImg" src={gitHub} style={{marginTop:1+"em"}}></img>
                     </a>
                   <p style={{marginTop:2+"em"}}> React</p>
               </div>
@@ -95,10 +95,10 @@ render() {
               <div style={{backgroundColor:"white", height:200+"px", width:300+"px", marginLeft:"auto", marginRight:"auto",marginTop:3+"em"}}>
                 <h4>Three-Card Tarot Reading</h4>
                     <a href="https://github.com/Kennedy777/TarotReading" target="_blank">
-                      <img id="iconeImg" src={gitHub}></img>
+                      <img id="iconeImg" src={gitHub} style={{marginTop:1+"em"}}></img>
                     </a>
                     <a href="https://kennedy777.github.io/TarotReading/" target="_blank">
-                      <img src={website} ></img>
+                      <img src={website} style={{marginTop:1+"em"}}></img>
                     </a>
                   <p style={{marginTop:2+"em"}}>  HTML - JavaScript</p>
               </div>
@@ -118,10 +118,10 @@ render() {
             <div style={{backgroundColor:"white", height:200+"px", width:300+"px", marginLeft:"auto", marginRight:"auto",marginTop:3+"em"}}>
               <h4>Music Store</h4>
                 <a href="https://github.com/sabrinamianne/Online-Store" target="_blank">
-                  <img id="iconeImg" src={gitHub}></img>
+                  <img id="iconeImg" src={gitHub} style={{marginTop:1+"em"}}></img>
                 </a>
                 <a href="https://online-store-de73c.web.app/admin" target="_blank">
-                  <img src={website} ></img>
+                  <img src={website} style={{marginTop:1+"em"}}></img>
                 </a>
               <p style={{marginTop:2+"em"}}>  Angular - Firebase </p>
             </div>
@@ -141,7 +141,7 @@ render() {
               <div style={{backgroundColor:"white", height:200+"px", width:300+"px", marginLeft:"auto", marginRight:"auto",marginTop:3+"em"}}>
                 <h4>Real Estate Website Template</h4>
                   <a href="https://github.com/sabrinamianne/manage-my-lease" target="_blank">
-                    <img id="iconeImg" src={gitHub} ></img>
+                    <img id="iconeImg" src={gitHub} style={{marginTop:1+"em"}}></img>
                   </a>
                 <p style={{marginTop:2+"em"}}> React - Mapbox - react-map-gl  </p>
               </div>

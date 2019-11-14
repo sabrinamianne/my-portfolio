@@ -20,6 +20,8 @@ export class Footer extends React.Component {
           <a href="mailto:sabrina.mianne.portfolio@gmail.com" target="_blank">
             <img src={gmail} style={{height:2.9+"em"}}></img>
           </a>
+        </div>
+        <div>
             <p style={{marginLeft:2+"em", fontWeight:"lighter", textAlign:"center"}}>2019 ©  Copyright Sabrina Mianne | All Rights Reserved.</p>
         </div>
       </div>
