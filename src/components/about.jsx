@@ -24,7 +24,7 @@ export default class About extends React.Component {
 				id="about-container"
 				className="content-containers container text-center mt-5">
 				<h1 id="about" className={this.props.bounceLeft} style={{fontSize:5+"em",fontFamily:"monospace"}}>
-					Full Stack Developer Junior
+					Junior Full Stack Developer
 				</h1>
 				<img src={me} alt="me" style={{ borderRadius: 50 + "%", marginTop: 4 +"rem" , marginLeft:"auto", marginRight: "auto", display: "block", width: 30 + "%"}}></img>
 				<div className="row mt-5">
@@ -38,16 +38,17 @@ export default class About extends React.Component {
 				<div className="row" style={{ marginTop: 5 + "rem", fontFamily:"monospace",marginLeft:0}}>
 					<div className="col-12 col-lg-12 hidden" style={{textAlign:"center"}}>
 						<p className={"mytext pt-3 " + this.props.fadeIn} style={{fontSize:23+"px"}}>
-							I have been passionate about creation since my early childhood,
-							I loved creating new funny games to play with my sisters and friends.
-							I wrote a lot of stories, poems, songs that my sisters and I loved to sing,
-							from what they told me. I am confident to say that this creator side of me
-							was the trigger to start coding. Having to create new lines of code,
-							improving existing ones, looking for new ways to improve stuff,
-							being challenged and try to find solutions to problems is something that thrives me.
+						I have been passionate about creating things since my childhood.
+						As a kid, I loved creating games to play with my sisters and friends,
+						as well as writing stories, poems and songs. I am confident that the creator inside of me
+						 triggered my interest in coding and motivated me to pursue
+						 a coding Bootcamp.
+						 I recently graduated as a Junior Full Stack Developer and have been working on a
+						 diverse portfolio of web applications in numerous languages and using a
+						 broad range of technologies, such as JavaScript, C#, Angular, HTML5, and CSS.
 						</p>
 						<p className={"mytext pt-3 " + this.props.fadeIn} style={{fontSize:23+"px"}}>
-							After many years looking for what I wanted to spend my days on, I am now happy to have finally found what drives me.
+						See some of my works below.
 						</p>
 					</div>
 				</div>

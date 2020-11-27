@@ -50,9 +50,9 @@ export default class Photos extends React.Component {
 
   render() {
 
-    return <div className="main">
+    return <div className="main" style={{ marginLeft:1+"em", marginRight:1+"em", marginTop:3+"em"}}>
       <div id="my-photos">
-        <h1 className="title" style={{fontSize:2.5+"em",fontFamily:"monospace", marginBottom:4+"em", marginTop:4+"em"}}>
+        <h1 className="title" style={{fontSize:2.5+"em",fontFamily:"monospace", marginBottom:2+"em", marginTop:2+"em"}}>
           One of my passions is photography, here are some of my photos. Have a good time!
         </h1>
         <div className="wrapper">
@@ -155,11 +155,9 @@ export default class Photos extends React.Component {
             <div className="image">
               <img src={img32} alt="Landscape" ></img>
             </div>
-
           </div>
           <a className="next" onClick={this.scroll.bind(null,1)}>&#10095;</a>
         </div>
-
       </div>
     </div>
   }

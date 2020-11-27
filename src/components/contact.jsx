@@ -1,19 +1,19 @@
-
 import React from "react";
 import PropTypes from "prop-types";
+import '.././styles/style.css';
 
 export default class Contact extends React.Component {
 render() {
   return (
     <div id="my-contact" className="container text-center my-5">
-      <h1 id="contact" className={"mb-3 " + this.props.fadeInLeft} style={{marginTop:2+"em",fontSize:8+"em", fontFamily:"monospace"}}>
+      <h1 id="contact" className={"mb-3 " + this.props.fadeInLeft}>
         Contact me
       </h1>
       <form
         className={this.props.shake}
         action="https://formspree.io/xoqaogdj"
         method="POST">
-        <div className="form-group" style={{marginTop:10+"em"}}>
+        <div className="form-group" style={{marginTop:5+"em"}}>
           <div className="row" >
             <div className="col-12 col-sm-12 col-md-6 mx-auto">
               <input

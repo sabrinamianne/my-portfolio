@@ -5,7 +5,7 @@ import "./styles/index.scss";
 import Navbar from "./components/navbar.jsx";
 import Footer from "./components/footer.jsx";
 import "jquery/dist/jquery";
-import 'bootstrap/dist/css/bootstrap.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(

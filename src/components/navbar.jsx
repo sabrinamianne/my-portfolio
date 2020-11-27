@@ -1,11 +1,13 @@
 import React, { Component } from "react";
 import About from './about.jsx';
 import Background from './background.jsx';
+import Footer from './footer.jsx';
 import Projects from './projects.jsx';
 import Contact from './contact.jsx';
 import Photos from './photos.jsx';
 import icone from '.././styles/img/icone.png';
 import '.././styles/style.css';
+
 
 export default class Navbar extends Component {
 
@@ -38,23 +40,17 @@ export default class Navbar extends Component {
 
   render() {
     const nav = {
-      fontSize:"27px",
-      marginRight:"25%",
-      marginLeft:"5%",
+      fontSize:"22px",
+      marginRight:"7%",
+      marginLeft:"3%",
       fontFamily:"monospace"
     }
 
-    const iconeStyle = {
-      height:"4em",
-    }
 
   const show = (this.state.menu) ? "show" : "" ;
 
   return (
 <div>
-  <div className="scrollToTop" >
-    <a href="#"><img src={icone} alt="icone" style={iconeStyle}></img></a>
-  </div>
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
       <a
         className="navbar-brand"
@@ -97,6 +93,12 @@ export default class Navbar extends Component {
           }}
           className="btn-style nav-item nav-link" style={nav}>
           Contact
+        </a>
+        <a href="https://www.linkedin.com/in/sabrinamianne/" className="btn-style nav-item nav-link" style={nav}>
+          Linkedin
+        </a>
+        <a href="https://github.com/sabrinamianne" className="btn-style nav-item nav-link" style={nav}>
+          Github
         </a>
         </div>
       </div>

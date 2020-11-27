@@ -15,12 +15,10 @@ export default class Background extends React.Component {
 	render() {
 		return (
 			<div id="my-background" className="background">
-
 				<div className="top-container flex" style={{fontFamily:"monospace"}}>
 					<h1>
-						Hello Friend, I&apos;m Sabrina Mianne.
+						Hi! <br/> I&apos;m Sabrina Mianne. <br/> Welcome to my portfolio.
 						<br />
-						Nice to meet you.
 					</h1>
 					<button
 						className={"work-button " + this.props.bounceIn}
