@@ -24,7 +24,7 @@ export default class About extends React.Component {
 				id="about-container"
 				className="content-containers container text-center mt-5">
 				<h1 id="about" className={this.props.bounceLeft} style={{fontSize:5+"em",fontFamily:"monospace"}}>
-					Junior Full Stack Developer
+					 Full Stack Developer
 				</h1>
 				<img src={me} alt="me" style={{ borderRadius: 50 + "%", marginTop: 4 +"rem" , marginLeft:"auto", marginRight: "auto", display: "block", width: 30 + "%"}}></img>
 				<div className="row mt-5">
