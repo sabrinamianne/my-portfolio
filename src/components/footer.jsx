@@ -3,7 +3,7 @@ import '.././styles/style.css';
 import linkedin from '.././styles/img/linkedin-icon.png';
 import gitHub from '.././styles/img/git.png';
 import gmail from '.././styles/img/gmail.png';
-import icone from '.././styles/img/icone.png';
+import icone from '.././styles/img/arrow.png';
 import resume from '.././styles/img/resume.jpg';
 
 export class Footer extends React.Component {
@@ -28,7 +28,7 @@ export class Footer extends React.Component {
           <a href="#"><img src={icone} alt="icone" style={{ marginTop: 2 +"rem" , marginBottom:4+"em",marginLeft:"auto", marginRight: "auto", display: "block", width: 2.5 + "em"}}></img></a>
         </div>
         <div>
-            <p style={{ fontWeight:"lighter", textAlign:"center"}}>2019 ©  Copyright Sabrina Mianne | All Rights Reserved.</p>
+            <p style={{ fontWeight:"lighter", textAlign:"center"}}>2022 ©  Copyright Sabrina Mianne | All Rights Reserved.</p>
         </div>
       </div>
     );
