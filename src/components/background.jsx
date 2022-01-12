@@ -16,11 +16,10 @@ export default class Background extends React.Component {
 		return (
 			<div id="my-background" className="background">
 				<div className="top-container flex" style={{fontFamily:"monospace"}}>
-					<h1>
-						Hi! <br/> I&apos;m Sabrina Mianne. <br/> Welcome to my portfolio.
-						<br />
-					</h1>
-					<button
+				<h1 id="bc" className={this.props.bounceLeft} style={{fontSize:3+"em",fontFamily:"monospace",textAlign:"center"}}>
+				<br/> Sabrina_Mianne = ( Software Developer ) {"=>"} Welcome!
+				</h1>
+					{/*<button
 						className={"work-button " + this.props.bounceIn}
 						data-wow-offset="0"
 						onClick={() => {
@@ -33,7 +32,7 @@ export default class Background extends React.Component {
 							});
 						}}>
 						View my work
-					</button>
+					</button>*/}
 				</div>
 			</div>
 		);
@@ -42,5 +41,10 @@ export default class Background extends React.Component {
 
 Background.propTypes = {
 	projectsRef: PropTypes.object,
-	bounceIn: PropTypes.string
+	bounceIn: PropTypes.string,
+	bounceLeft: PropTypes.string,
+	fadeInLeft: PropTypes.string,
+	fadeInRight: PropTypes.string,
+	fadeIn: PropTypes.string,
+	tada: PropTypes.string
 };

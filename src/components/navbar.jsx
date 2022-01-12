@@ -4,9 +4,10 @@ import Background from './background.jsx';
 import Footer from './footer.jsx';
 import Projects from './projects.jsx';
 import Contact from './contact.jsx';
-import Photos from './photos.jsx';
+//import Photos from './photos.jsx';
 import icone from '.././styles/img/icone.png';
 import '.././styles/style.css';
+import WOW from "wow.js";
 
 
 export default class Navbar extends Component {
@@ -16,7 +17,7 @@ export default class Navbar extends Component {
     this.about= React.createRef();
     this.projects= React.createRef();
     this.contact= React.createRef();
-    this.photos= React.createRef();
+    //this.photos= React.createRef();
 
     this.scrolling = this.scrolling.bind(this);
 
@@ -80,13 +81,13 @@ export default class Navbar extends Component {
           className="btn-style nav-item nav-link" style={nav}>
           Projects
         </a>
-        <a
+        {/*<a
           onClick={() => {
             this.scrolling(this.photos);
           }}
           className="btn-style nav-item nav-link" style={nav}>
           Photos
-        </a>
+        </a>*/}
         <a
           onClick={() => {
             this.scrolling(this.contact);
@@ -124,12 +125,12 @@ export default class Navbar extends Component {
       fadeInRight={"wow fadeInRight"}
       fadeIn={"wow fadeIn"}
       />
-    <Photos
+    {/*<Photos
       ref={this.photos}
       id="my-photos"
       fadeInRight={"wow fadeInRight"}
       fadeIn={"wow fadeIn"}
-    />
+    />*/}
     <Contact
       ref={this.contact}
       id="my-contact"

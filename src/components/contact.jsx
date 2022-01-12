@@ -56,7 +56,7 @@ render() {
           <div className="col-12 col-sm-12 col-md-6 mx-auto">
             <button
               type="submit"
-              className="btn btn-warning mb-2 hidden">
+              className="btn btn-dark mb-2 hidden">
               Submit
             </button>
           </div>
