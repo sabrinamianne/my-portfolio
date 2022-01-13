@@ -1,7 +1,27 @@
 @import "~bootstrap/scss/bootstrap.scss";
 @import url('https://fonts.googleapis.com/css?family=Lato:300,400,700');
 
+$phone-width: 599px;
+$tablet-width: 622px;
+$desktop-width: 1024px;
 
+@mixin tablet {
+  @media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width - 1px}) {
+    @content;
+  }
+}
+
+@mixin phone {
+  @media (max-width: #{$phone-width}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+    @media (min-width: #{$desktop-width}) {
+      @content;
+    }
+  }
 
 @keyframes animStar {
   from {
@@ -37,6 +57,15 @@
     //width: 40%;
     padding: 4px;
     letter-spacing: 0;
+    @include phone {
+        font-size: 12px;
+    }
+    @include tablet {
+        font-size: 20px;
+    }
+    @include desktop {
+        font-size: 35px;
+    }
 }
 .work-button {
     margin-top: 1rem;
@@ -176,6 +205,8 @@
     flex-direction: row;
     justify-content: space-between;
 }
+
+
 
 
 

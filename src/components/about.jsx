@@ -35,13 +35,15 @@ export default class About extends React.Component {
 
 				<div className="row" style={{ marginTop: 5 + "rem", fontFamily:"monospace",marginLeft:0}}>
 					<div className="col-12 col-lg-12 hidden" style={{textAlign:"center"}}>
-						<p className={"mytext pt-3 " + this.props.fadeIn} style={{fontSize:23+"px"}}>
-						I have always been fascinated by computers and the logic behind the screen.
-						My passion for computing and new technologies led me to learn Python and Lisp, and then to attend a bootcamp where I was able to work on a diverse portfolio of web applications using JavaScript, C#, React, Angular, SQL and HTML/CSS.
-						I have an unlimited curiosity and willingness to understand how things work and I love fixing them. I have great problem-solving skills and can work effectively with technical and abstract concepts. In addition, my previous work experiences have strengthened my communication and teamwork skills.
-						I am eager to learn and thrive when I gain new knowledge.
-						After being a stay-at-home parent for two years and using that time to develop my technical abilities, I am looking forward to re-entering the workforce and applying all my new skills.
-
+						<p className={"mytext pt-3 " + this.props.fadeIn} style={{fontSize:21+"px"}}>
+						I am a software developer born in Paris, living in Seattle.<br/>
+						I have always been fascinated by computers and the logic behind the screen.<br/>
+						My passion for computing and new technologies led me to learn Python and Lisp, 
+						and then to attend a bootcamp where I was able to work on a diverse portfolio of web applications 
+						using JavaScript, C#, React, Angular, SQL, and HTML/CSS.<br/>
+						I have unlimited curiosity and willingness to understand how things work, and I love fixing them. 
+						I am eager to learn and thrive when I gain new knowledge, and I am obsessed with making things and even more obsessed with making things better.
+						
 					</p>
 						
 					</div>
