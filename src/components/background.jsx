@@ -16,9 +16,9 @@ export default class Background extends React.Component {
 		return (
 			<div id="my-background" className="background">
 				<div className="top-container flex" style={{fontFamily:"monospace"}}>
-				<h1 id="bc" className={this.props.bounceLeft} style={{fontSize:3+"em",fontFamily:"monospace",textAlign:"center"}}>
+				<p id="bc" className={this.props.bounceLeft} style={{fontFamily:"monospace",textAlign:"center"}}>
 				<br/> Sabrina_Mianne = ( Software Developer ) {"=>"} Welcome!
-				</h1>
+				</p>
 					{/*<button
 						className={"work-button " + this.props.bounceIn}
 						data-wow-offset="0"
